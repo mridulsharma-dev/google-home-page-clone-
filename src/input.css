@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "tailwindcss";
+@theme {
+  --breakpoint-sm: 800px;
+  --padding-1: 100px;
+  --padding-hii: 400px;
+  --font-family: "Caveat", "cursive";
+}
+
+@utility hii {
+  background-color: blue;
+}
+
+@layer components {
+  .btn {
+    @apply p-2  bg-amber-600 text-black inline-flex items-center justify-center hover:animate-bounce;
+  }
+  .img {
+    @apply w-70 border-4 border-blue-500 hover:brightness-125 hover:border-2 border-blue-200 hover:scale-105;
+  }
+}
